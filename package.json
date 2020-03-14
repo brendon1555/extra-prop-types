@@ -1,0 +1,29 @@
+{
+  "name": "extra-prop-types",
+  "version": "1.0.0",
+  "description": "A Color PropType for React",
+  "main": "build/index.js",
+  "module": "build/index.es.js",
+  "repository": "https://github.com/brendon1555/extra-prop-types.git",
+  "author": "Brendon Lees <brendon1555@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json"
+  },
+  "devDependencies": {
+    "@types/invariant": "^2.2.31",
+    "prettier": "^1.19.1",
+    "rollup": "^2.0.6",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-typescript2": "^0.26.0",
+    "tslint": "^6.1.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "invariant": "^2.2.4"
+  }
+}
