@@ -27,7 +27,7 @@ $ npm install --save extra-prop-types
 
 ```JSX
 
-import ExtraPropTypes from 'extra-prop-types';
+import * as ExtraPropTypes from 'extra-prop-types';
 
 
 const SomeComponent = (colorProp) => (
