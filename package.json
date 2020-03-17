@@ -1,29 +1,51 @@
 {
   "name": "extra-prop-types",
-  "version": "1.0.0",
-  "description": "A Color PropType for React",
+  "version": "0.1.0",
+  "description": "Extra PropTypes for React",
   "main": "build/index.js",
   "module": "build/index.es.js",
   "repository": "https://github.com/brendon1555/extra-prop-types.git",
   "author": "Brendon Lees <brendon1555@gmail.com>",
   "license": "MIT",
+  "keywords": [
+    "react",
+    "front-end",
+    "typescript",
+    "prop-types",
+    "extra",
+    "validation",
+    "prop"
+  ],
   "scripts": {
     "build": "rollup -c",
     "format": "prettier --write \"src/**/*.ts\"",
-    "lint": "tslint -p tsconfig.json"
+    "lint": "tslint -p tsconfig.json",
+    "test": "jest --watch",
+    "test:once": "jest",
+    "prepare": "yarn build",
+    "prepublishOnly": "yarn test:once && yarn lint",
+    "preversion": "yarn lint",
+    "version": "yarn format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "devDependencies": {
     "@types/invariant": "^2.2.31",
+    "@types/jest": "^25.1.4",
+    "jest": "^25.1.0",
     "prettier": "^1.19.1",
     "rollup": "^2.0.6",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-typescript2": "^0.26.0",
+    "ts-jest": "^25.2.1",
     "tslint": "^6.1.0",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.8.3"
   },
   "dependencies": {
     "invariant": "^2.2.4"
-  }
+  },
+  "files": [
+    "build"
+  ]
 }

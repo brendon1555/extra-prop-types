@@ -41,10 +41,25 @@ SomeComponent.propTypes = {
 ```
 
 ---
+## Types
+
+**color**
+accepts:
+- hex
+  - #ffffff
+- rgb
+  - rgb(255, 255, 255)
+- rgba
+  - rgba(255, 255, 255, 1)
+- hsl
+  - hsl(0, 100%, 100%)
+- hsla
+  - hsla(0, 0%, 100%, 1)
+---
 
 ## Contributing
 
-> To get started...
+> Want to add a type? To get started...
 
 ### Step 1
 
